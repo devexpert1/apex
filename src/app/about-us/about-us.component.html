@@ -1,0 +1,97 @@
+<app-header>
+</app-header>
+<section class="indx-slidr-sec">
+	<div class="indx-slidr-img bg1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 px-0">
+					<div class="indx-slidr-txt">
+					    <img class="topBannerImg" src="{{imageUrl}}{{pageDataHome?.banner_image}}" alt=""> 
+					    <label class="homeBannerText">
+					    	<div [innerHTML]="pageDataHome?.banner_text"></div>
+					    </label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--section class="page-title parallaxie">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1>About Me</h1>
+        <nav aria-label="breadcrumb" class="page-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">About Me</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>  
+</section-->
+<section class="about-me-str">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 ">
+				<div class="cont-st-alb">
+					<div class="tlt-aboy-m new-trss"> 
+						<span class="txt-lits"> About Me</span>
+						<h3> Some Facts <span>About Me </span></h3>
+					</div>
+					<div [innerHTML]="pageDataAbout?.banner_text"></div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-12 order-lg-1">
+				<div class="higr-dlts">
+					<div class="row no-gutters">
+					  <!--div class="col-sm-7 z-index-1">
+						<div class="theme-bg rounded p-4">
+						  <div class="section-title mb-0">
+							<h2 class="title mb-0 font-w-5">John Sanders</h2>
+							<span class="fount-tsr"> Founder & CEO </span>
+						  </div>
+						</div>
+					  </div-->
+						<div class="col-md-5 mt-sm-5 offset-md-7">
+							<div class="img-ov-str">
+								<img class="img-fluid rounded" src="assets/img/05.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="row custom-mt-10 z-index-0">
+					  <div class="col-11 ml-auto mr-auto">
+						<img class="img-fluid rounded hgt-img" src="{{imageUrl}}{{pageDataAbout?.banner_image}}" alt="">
+					  </div>
+					</div>
+				</div>
+			  </div>
+		</div>
+	</div>
+</section>
+<!--section class="img-big-str about-me-str">
+	<div class="container-fluid p-0">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="img-stc-tra">
+					<img src="assets/img/big-image.jpg">
+				</div>
+			</div>
+			<div class="col-md-5 z-index-1">
+				<div class="cont-st-alb heogts">
+					<div class="tlt-aboy-m"> 
+						<h3> What are the <span> Benefits </span></h3>
+						<span class="ovrt-tra"> Benefits </span>
+					</div>
+					<p> The Benefit Coordinators parent organization, MyLife Services, is an educational vendor approved by the General Services Administration, and is designated as a Service Disabled Veteran Owned Small Business by the Veterans Administration.</p>
+					<p> Mr. Sanders has served in the United Stated Army. While in the Army he earned a Bachelor’s Degree from the University of Central Texas. He maintains multiple professional licenses domestically and abroad. </p>
+					<p>Schedule time to discuss your specific needs. To set a time on Mr. Sanders calendar, click <a href="#" class="clic-hrs">  HERE. </a> </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section-->
+<app-footer>
+</app-footer>

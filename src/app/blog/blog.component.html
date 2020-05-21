@@ -1,0 +1,51 @@
+<app-header>
+</app-header>
+<section class="indx-slidr-sec">
+	<div class="indx-slidr-img bg1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 px-0">
+					<div class="indx-slidr-txt">
+					    <img class="topBannerImg" src="{{imageUrl}}{{pageDataHome?.banner_image}}" alt=""> 
+					    <label class="homeBannerText">
+					    	<div [innerHTML]="pageDataHome?.banner_text"></div>
+					    </label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--section class="page-title parallaxie">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1>Our Blog</h1>
+        <nav aria-label="breadcrumb" class="page-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>  
+</section-->
+<section class="about-me-str">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="cont-blogs">
+					<div class="iimg-blgs-m"> 
+						<img src="{{imageUrl}}{{pageDataBlog?.banner_image}}">
+					</div>
+					
+					<div [innerHTML]="pageDataBlog?.banner_text"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<app-footer>
+</app-footer>

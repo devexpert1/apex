@@ -1,0 +1,17 @@
+.main{
+	background-image: url('../../assets/img/slide-bg.jpg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+	position: absolute;
+    top: 33%;
+    margin: auto;
+    left: 45%;
+}
