@@ -9,11 +9,11 @@ import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
 		{path: '', component: HomeComponent},
-		{path: ':type', component: DomainComponent},
-		{path: ':type/home', component: HomeComponent},
-		{path: ':type/about-us', component: AboutUsComponent},
-		{path: ':type/blog', component: BlogComponent},
-		{path: ':type/contact-us', component: ContactUsComponent},
+		{path: 'domain/:type', component: DomainComponent},
+		{path: 'domain/:type/home', component: HomeComponent},
+		{path: 'domain/:type/about-us', component: AboutUsComponent},
+		{path: 'domain/:type/blog', component: BlogComponent},
+		{path: 'domain/:type/contact-us', component: ContactUsComponent},
 		{path: ':type/error', component: ErrorComponent},
 ];
 

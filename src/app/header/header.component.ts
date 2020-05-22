@@ -14,11 +14,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   	this.type = this.route.snapshot.paramMap.get('type');
   	console.log(this.type);
-  	this.selectedItem  = '/' + window.location.href.split('/')[4];
+  	this.selectedItem  = '/' + window.location.href.split('/')[5];
   }
 
   openUrl(page){
-  	this.router.navigateByUrl('/' + this.type + page);
+  	this.router.navigate(['/domain/' + this.type + page]);
   }
 
 }
+
+
+//this.router.navigate( [ routing.path ] , { relativeTo: route , queryParams: paramsInUrl } );

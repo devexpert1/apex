@@ -42,7 +42,8 @@ export class AboutUsComponent implements OnInit {
   ngOnInit() {
     this.type = this.route.snapshot.paramMap.get('type');
     
-    this.adminService.postData('getUserDomain',{username: this.type}).subscribe((response: any) => {
+    if(this.type != null){
+      this.adminService.postData('getUserDomain',{username: this.type}).subscribe((response:any) => {
       if(response.status == 1){
         this.getPageData(response.data._id);
       }else{
@@ -50,6 +51,7 @@ export class AboutUsComponent implements OnInit {
         this.router.navigateByUrl('/auth/error');
       }
     });
+    }
     
   }
 

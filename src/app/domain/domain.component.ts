@@ -19,7 +19,7 @@ export class DomainComponent implements OnInit {
   	this.adminService.postData('getUserDomain',{username: this.type}).subscribe((response: any) => {
       if(response.status == 1){
       	localStorage.setItem('token', response.data._id);
-      	this.router.navigateByUrl('/'+ this.type + '/home');
+      	this.router.navigate(['/domain/'+ this.type + '/home']);
       }else{
         //localStorage.clearAll();
       	this.router.navigateByUrl('/auth/error');
